@@ -1,5 +1,6 @@
 import { View, StyleSheet, Image, Dimensions } from 'react-native';
 import getirlogo from '../../assets/images/getirlogo.png';
+import { colors } from '../constants/colors';
 
 const { width, height } = Dimensions.get('window');
 const HeaderBanner = () => {
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
     height: height * 0.05,
   },
   container: {
-    backgroundColor: '#8c3af6',
+    backgroundColor: colors.primary,
     width: width,
     height: height * 0.12,
     paddingTop: 50,

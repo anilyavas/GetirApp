@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, Dimensions } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
+import { colors } from '../constants/colors';
 
 const { width, height } = Dimensions.get('window');
 const Address = () => {
@@ -7,10 +8,12 @@ const Address = () => {
     <View style={styles.container}>
       <View style={styles.textContainer}>
         <Text style={styles.addressText}>
-          <Text style={{ color: '#8146ec', fontWeight: 'bold' }}>Ev,</Text>{' '}
+          <Text style={{ color: colors.secondary, fontWeight: 'bold' }}>
+            Ev,
+          </Text>{' '}
           Cumhuriyet Caddesi, Arslan sok...
         </Text>
-        <FontAwesome5 name='chevron-down' size={20} color='#8146ec' />
+        <FontAwesome5 name='chevron-down' size={20} color={colors.secondary} />
       </View>
       <View style={styles.subContainer}>
         <Text style={{ fontSize: 14 }}>TVS</Text>
@@ -24,7 +27,7 @@ const styles = StyleSheet.create({
   container: {
     width: width,
     flexDirection: 'row',
-    backgroundColor: '#fdd001',
+    backgroundColor: colors.yellow,
     alignItems: 'center',
   },
   addressText: {
