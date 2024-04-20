@@ -6,7 +6,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Navigation />
-      <StatusBar style='auto' />
+      <StatusBar style='light' />
     </NavigationContainer>
   );
 }
