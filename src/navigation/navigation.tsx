@@ -4,4 +4,4 @@ const Navigation = () => {
   return <Stack />;
 };
 
-export default navigation;
+export default Navigation;
