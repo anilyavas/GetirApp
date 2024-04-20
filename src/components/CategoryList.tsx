@@ -8,12 +8,13 @@ const CategoryList = () => {
       <FlatList
         contentContainerStyle={{
           justifyContent: 'space-between',
-          flex: 1,
         }}
         data={categories}
         renderItem={({ item }) => <CategoryListItem item={item} />}
         numColumns={4}
         keyExtractor={(item) => item.id.toString()}
+        ListFooterComponent={<View style={{ height: 20 }} />}
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );
@@ -24,5 +25,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    paddingTop: 10,
   },
 });

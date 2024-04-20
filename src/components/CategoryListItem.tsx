@@ -1,11 +1,16 @@
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, Pressable } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const CategoryListItem = ({ item }) => {
+  const navigation = useNavigation();
   return (
-    <View style={styles.container}>
+    <Pressable
+      onPress={() => navigation.navigate('CategoryDetails')}
+      style={styles.container}
+    >
       <Image source={{ uri: item.src }} style={styles.img} />
       <Text style={styles.title}>{item.name}</Text>
-    </View>
+    </Pressable>
   );
 };
 
@@ -20,7 +25,7 @@ const styles = StyleSheet.create({
   img: {
     width: 75,
     height: 75,
-    marginBottom: 5,
+    marginBottom: 10,
   },
   title: {
     fontSize: 12,
