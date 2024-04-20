@@ -16,8 +16,9 @@ const banners = [
 ];
 const BannerCarousel = () => {
   return (
-    <View style={styles.container}>
+    <View>
       <FlatList
+        contentContainerStyle={{}}
         data={banners}
         renderItem={(item) => (
           <Image source={{ uri: item.item }} style={styles.image} />
@@ -34,11 +35,8 @@ const BannerCarousel = () => {
 
 export default BannerCarousel;
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   image: {
-    width: width * 1,
+    width: width,
     height: height * 0.3,
     resizeMode: 'stretch',
   },
