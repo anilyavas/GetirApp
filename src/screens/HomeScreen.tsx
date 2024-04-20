@@ -1,9 +1,10 @@
 import { View, Text, StyleSheet } from 'react-native';
+import HeaderBanner from '../components/HeaderBanner';
 
 const HomeScreen = () => {
   return (
     <View>
-      <Text>HomeScreen</Text>
+      <HeaderBanner />
     </View>
   );
 };
