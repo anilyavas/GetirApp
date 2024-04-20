@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import HeaderBanner from '../components/HeaderBanner';
 import Address from '../components/Address';
 

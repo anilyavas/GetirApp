@@ -16,7 +16,14 @@ const Address = () => {
         <FontAwesome5 name='chevron-down' size={20} color={colors.secondary} />
       </View>
       <View style={styles.subContainer}>
-        <Text style={{ fontSize: 14 }}>TVS</Text>
+        <Text
+          style={{ fontSize: 12, color: colors.secondary, fontWeight: '600' }}
+        >
+          TVS
+        </Text>
+        <Text style={{ color: colors.secondary, fontWeight: 'bold' }}>
+          30+ dk
+        </Text>
       </View>
     </View>
   );
@@ -31,17 +38,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   addressText: {
-    fontSize: 16,
+    fontSize: 14,
     flex: 1,
   },
   textContainer: {
     flex: 1,
     backgroundColor: 'white',
-    padding: 10,
-    borderEndEndRadius: 20,
+    padding: 15,
+    borderTopRightRadius: 20,
+    borderBottomRightRadius: 20,
     flexDirection: 'row',
   },
   subContainer: {
-    padding: 10,
+    padding: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
