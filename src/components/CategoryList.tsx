@@ -10,11 +10,12 @@ const CategoryList = () => {
           justifyContent: 'space-between',
         }}
         data={categories}
-        renderItem={({ item }) => <CategoryListItem item={item} />}
+        renderItem={({ item, index }) => <CategoryListItem item={item} />}
         numColumns={4}
         keyExtractor={(item) => item.id.toString()}
         ListFooterComponent={<View style={{ height: 20 }} />}
         showsVerticalScrollIndicator={false}
+        pagingEnabled={true}
       />
     </View>
   );
