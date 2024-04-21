@@ -1,16 +1,14 @@
-import { View, Text, StyleSheet, Image, Pressable } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { Link } from 'expo-router';
+import { Text, StyleSheet, Image, Pressable } from 'react-native';
 
 const CategoryListItem = ({ item }) => {
-  const navigation = useNavigation();
   return (
-    <Pressable
-      onPress={() => navigation.navigate('CategoryDetails')}
-      style={styles.container}
-    >
-      <Image source={{ uri: item.src }} style={styles.img} />
-      <Text style={styles.title}>{item.name}</Text>
-    </Pressable>
+    <Link href={'./CategoryDetailsScreen'}>
+      <Pressable style={styles.container}>
+        <Image source={{ uri: item.src }} style={styles.img} />
+        <Text style={styles.title}>{item.name}</Text>
+      </Pressable>
+    </Link>
   );
 };
 

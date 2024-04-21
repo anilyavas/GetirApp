@@ -3,6 +3,7 @@
     "name": "Getir",
     "slug": "Getir",
     "version": "1.0.0",
+    "scheme": "Getir",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
