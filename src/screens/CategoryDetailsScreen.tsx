@@ -1,11 +1,17 @@
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet, FlatList } from 'react-native';
+import categories from '../../assets/data/categories';
+import { colors } from '../constants/colors';
+import DetailsListContainer from '../components/DetailsListContainer';
 
 const CategoryDetailsScreen = () => {
   return (
-    <View>
-      <Text>CategoryDetailsScreen</Text>
+    <View style={styles.container}>
+      <DetailsListContainer item={categories} />
     </View>
   );
 };
 
 export default CategoryDetailsScreen;
+const styles = StyleSheet.create({
+  container: {},
+});

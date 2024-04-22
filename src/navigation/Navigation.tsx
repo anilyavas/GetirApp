@@ -18,7 +18,15 @@ const Navigation = () => {
         component={HomeScreen}
         options={{ headerShown: false }}
       />
-      <Stack.Screen name='Details' component={CategoryDetailsScreen} />
+      <Stack.Screen
+        name='Details'
+        component={CategoryDetailsScreen}
+        options={{
+          headerStyle: { backgroundColor: colors.primary },
+          headerTintColor: 'white',
+          headerTitle: 'Ürünler',
+        }}
+      />
     </Stack.Navigator>
   );
 };
